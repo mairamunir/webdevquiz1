@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "5b9dee92-be0b-4743-b3c5-15acb63d9bec",
+		"name": "webdevQuiz1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30013788",
+		"_collection_link": "https://universal-escape-697903.postman.co/workspace/New-Team-Workspace~86087c66-e291-4788-accd-abbdac154a94/collection/30013788-5b9dee92-be0b-4743-b3c5-15acb63d9bec?action=share&source=collection_link&creator=30013788"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"m@abc.com\",\r\n    \"password\" : \"12345ABCD\",\r\n    \"firstName\": \"m\",\r\n    \"lastName\" : \"munir\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"m@abc.com\",\r\n    \"password\" : \"12345ABCD\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addRecipe",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Pasta\",\r\n    \"ingredients\": \"\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/recipe/addRecipe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"recipe",
+						"addRecipe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addIngredient",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"salt\",\r\n    \"quantity\": \"1\",\r\n    \"unit\" : \"tspn\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/ingredients/addIngredient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ingredients",
+						"addIngredient"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
